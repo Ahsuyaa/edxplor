@@ -1,0 +1,21 @@
+// Small devices (mobile phones)
+@mixin small {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+  
+  // Medium devices (tablets)
+  @mixin medium {
+    @media (min-width: 577px) and (max-width: 992px) {
+      @content;
+    }
+  }
+  
+  // Large devices (desktops)
+  @mixin large {
+    @media (min-width: 993px) {
+      @content;
+    }
+  }
+  

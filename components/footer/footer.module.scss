@@ -1,0 +1,26 @@
+.gridcontainer {
+    background-color: #1581a8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+    gap: 10px; 
+    padding: 2rem 7rem;/* Adjust the gap value to create spacing between columns */
+  }
+  
+  .col {
+    padding: 10px; /* Adjust the padding value to create spacing within each column */
+    box-sizing: border-box;
+    color:#e7e5e5;
+    h1 
+    {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    li
+    {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+  }
+  

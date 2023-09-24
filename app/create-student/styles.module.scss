@@ -1,0 +1,281 @@
+@import "../../components/responive/responive.module.scss";
+.maindiv{
+  margin: 0 7rem;
+  .mainheadline{
+    
+      font-size: 60px;
+      font-weight: 400;
+      span {
+        font-size: 40px;
+        font-weight: 100;
+      }
+    
+  }
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 2rem;
+
+
+  .heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 12vh;
+    align-items: center;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+    img {
+      max-width: 40vh;
+      max-height: 100vh;
+    }
+  }
+
+  .row {
+    display: flex;
+    gap: 30px;
+
+    div {
+      padding: 10px;
+      width: 33.34%;
+      height: 8vh;
+      border-radius: 4px;
+      background-color: rgb(221, 221, 221);
+      margin: 20px 0;
+      font-size: 20px;
+
+      select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+      
+        outline: none;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .row2 {
+    display: flex;
+    gap: 30px;
+
+    div {
+      padding: 0 10px;
+      width: 25%;
+      height: 8vh;
+      border-radius: 4px;
+      background-color: rgb(221, 221, 221);
+      margin: 20px 0;
+      font-size: 20px;
+
+      select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        outline: none;
+        font-size: 20px;
+        max-height: none; /* Reset the max-height property */
+      }
+    }
+  }
+
+  .rightrow {
+    display: flex;
+    gap: 30px;
+    div {
+      padding: 0 10px;
+      width: 50%;
+      height: 8vh;
+      border-radius: 4px;
+      background-color: rgb(221, 221, 221);
+      margin: 15px 0;
+      font-size: 20px;
+
+      select {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        outline: none;
+        font-size: 20px;
+       
+        white-space: pre-line;
+      }
+    }
+  
+    
+  }
+  .textarea{
+    padding: 10px;
+    width: 100%;
+    height: 18vh;
+    border-radius: 4px;
+    background-color: rgb(221, 221, 221);
+    margin-top: 5px;
+    margin-bottom: 20px ;
+  
+    outline: none;
+    &::placeholder {
+      /* Customize placeholder styles here */
+      font-size: 20px;
+      color: #000;
+    }
+    
+   }
+}
+@include small {
+  // Styles for small devices
+}
+
+@include medium {
+  margin: 0 3rem;
+  .mainheadline{
+    
+    font-size: 50px;
+    font-weight: 400;
+    span {
+      font-size: 30px;
+      font-weight: 100;
+    }
+  
+}
+.container {
+display: grid;
+grid-template-columns: 70% 30%;
+grid-gap: 1.5rem;
+
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 7px;
+  height: 10vh;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+
+  img {
+    max-width: 30vh;
+    max-height: 80vh;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+
+  div {
+    padding: 10px;
+    width: 33.34%;
+    height: 6vh;
+    border-radius: 4px;
+    background-color: rgb(221, 221, 221);
+    margin: 15px 0;
+    font-size: 15px;
+
+    select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+    
+      outline: none;
+      font-size: 15px;
+    }
+  }
+}
+
+.row2 {
+  display: flex;
+  gap: 20px;
+
+  div {
+    padding: 0 7px;
+    width: 25%;
+    height: 6vh;
+    border-radius: 4px;
+    background-color: rgb(221, 221, 221);
+    margin: 15px 0;
+    font-size: 15px;
+
+    select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+ 
+      outline: none;
+      font-size: 15px;
+      max-height: none; /* Reset the max-height property */
+    }
+  }
+}
+
+.rightrow {
+  display: flex;
+  gap: 20px;
+  div {
+    padding: 0 7px;
+    width: 50%;
+    height: 6vh;
+    border-radius: 4px;
+    background-color: rgb(221, 221, 221);
+    margin: 15px 0;
+    font-size: 15px;
+
+    select {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+    
+      outline: none;
+      font-size: 15px;
+     
+      white-space: pre-line;
+    }
+  }
+
+  
+}
+.textarea{
+  padding: 7px;
+  width: 100%;
+  height: 12vh;
+  border-radius: 4px;
+  background-color: rgb(221, 221, 221);
+  margin-top: 5px;
+  margin-bottom: 20px ;
+
+  outline: none;
+  &::placeholder {
+    /* Customize placeholder styles here */
+    font-size: 15px;
+    color: #000;
+  }
+  
+ }
+}
+}
+
+@include large {
+  // Styles for large devices
+}
+}

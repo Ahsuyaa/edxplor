@@ -1,0 +1,140 @@
+
+.main {
+    margin: 2rem 7rem;
+.circleRow {
+    display: flex;
+    justify-content: center;
+
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:1px solid grey;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    h1 
+    {
+      font-size: large;
+      color: orange;
+     
+    }
+  }
+  
+  .content {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.maincontainer {
+
+  .heading {
+    font-size: 35px;
+    text-align: center;
+   font-weight: 600;
+   color: #3d3c3c;
+
+  }
+  .image 
+  {
+    width:100%;
+    height: 100vh;
+  }
+  .detail {
+    display: flex;
+   .icons {
+    display: flex;
+    margin:20px 0;
+ span {
+  margin-right: 10px;
+ }
+   svg {
+  font-size: 20px;
+  margin-right: 10px;
+   }
+   }
+  }
+  .description {
+    padding:  20px 0;
+  }
+  .maprow 
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e9e8e8;
+    margin-bottom: 40px;
+    .content{
+      margin: 30px;
+      .locationdetail {
+        margin: 10px 0;
+        h1 {
+          font-weight: bold;
+          margin: 10px 0;
+        }
+        h6 {
+          margin: 10px 0;
+        }
+      }
+      
+    }
+   
+  }
+  .shares {
+    display: flex;
+    justify-content: space-between ;
+    margin: 2rem 0;
+    .socialmedia 
+    {
+    
+  display: flex;
+  h6{
+  font-weight: bold;
+  margin-right: 5px;
+ 
+  }
+
+  
+  .roundedIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin:0 10px;
+    svg
+    {
+        font-size: 15px;
+        color: gray;
+ 
+    }
+  }
+    }
+    .tags
+    {
+  display: flex;
+  h6{
+    font-weight: bold;
+    margin-right: 5px;
+   
+    }
+  p{
+    text-align: center;
+    border-radius: 15px;
+    height:4vh;
+    padding: 2px;
+    border: 1px solid grey;
+  color: grey;
+  padding: 0px 8px;
+  margin:0 5px;
+  font-size: 15px;
+  }
+    }
+  }
+}
+}

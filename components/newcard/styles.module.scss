@@ -1,0 +1,82 @@
+.main {
+   
+
+ 
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 0.5rem;
+  }
+  
+  .image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 30vh;
+  }
+  
+  .details {
+   padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .titleAuthorRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Customize the title and author row styles */
+
+  .title {
+    background-color: rgb(230, 225, 225);
+    border-radius: 35px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+  }
+  
+  .author {
+  display: flex;
+  
+  .authorImage{
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+ }
+  }
+}
+  
+  
+  .description {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  
+  .footerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Customize the footer row styles */
+  }
+  
+  .readMore {
+   font-size: 15px;
+   color:#1581a8;
+   font-weight: bold;
+  }
+  
+  .time {
+  display: flex;
+  svg 
+  {
+    margin: 3px 5px;
+  }
+  }
+  
+
+  
+}
+  

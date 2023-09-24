@@ -1,0 +1,131 @@
+// styles.module.scss
+
+.app {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: -30px;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  border-radius: 8px;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.column30 {
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.column70 {
+  width: 70%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.headingRow {
+  display: flex;
+  position: relative; // Add relative positioning to the headingRow
+
+  .heading {
+
+    cursor: pointer;
+    position: relative; // Add relative positioning to the headings
+    padding: 5px 30px; // Height of the underline
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: #00aaff; // Change the color on hover
+    }
+
+    &.active {
+      color: #00aaff; // Change the color for the active heading
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px; // Adjust the position of the underline
+        height: 2px;
+        background-color: #00aaff; // Color for the underline
+      }
+    }
+  }
+
+  // Add a line element for the straight line
+
+}
+
+.content {
+  margin-top: 10px;
+}
+
+
+
+.personal-info-form {
+  margin: 5px 25px;
+  .row, .row2 {
+    display: flex;
+    
+    gap: 10px;
+   
+    input {
+      
+      border: 1px solid gainsboro;
+      background-color: rgb(236, 234, 234);
+      height: 5vh;
+      border-radius: 5px;
+      width: 100%;
+    }}
+  .row2 {
+  
+    .email{
+      flex:2;
+    .verify {
+      display: flex;
+     input {
+      width: 100%;
+      border-radius: 5px 0 0px 5px;
+     }
+    button {
+      
+      border: 1px solid gainsboro;
+      background-color: rgb(236, 234, 234);
+      height: 5vh;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+    }
+    }
+  }
+  .phone {
+    flex: 1;
+    input{
+      width: 100%;
+    }
+  }
+  }
+  .textarea-row {
+    display: flex;
+    gap: 20px; /* Equal gap spacing between the textarea and other elements */
+
+    textarea {
+      flex: 1; /* The textarea takes up all available space in the row */
+      border: 1px solid gainsboro;
+      background-color: rgb(236, 234, 234);
+      border-radius: 5px;
+      width: 100%;
+      height: 10vh;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@use "../../components/variables.module.scss";
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    grid-gap: 40px; 
+    padding: 5rem 7rem;
+    .col1
+    {
+    display: flex; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  
+    .iconContainer {
+        margin: 20px ;
+       
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            padding: 5px;
+            font-size: 40px;
+        }
+        
+      }
+      .content 
+      {
+        margin: 20px  ;
+    
+       text-align: center;
+      }
+    }
+}
+.row2 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 5rem 7rem;
+    .left {
+      
+      margin-right: 20px;
+      color: variables.$primary-color;
+        h1 
+        {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 10px 0;
+           
+        }
+        .iconRow {
+            display: flex;
+            margin: 10px;
+          }
+          
+          .roundedIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 10px;
+            svg
+            {
+                font-size: 25px;
+         
+            }
+          }
+          .roundedIcon:hover {
+            svg{
+                font-size: 40px;
+                background-color: white;
+            }
+          }
+          
+    }
+    .contactcontainer {
+        
+        margin: 20px 0;
+        color: #383838;
+         h1 {
+           font-size: 20px;
+      
+         }
+    
+         
+         .Row{
+           display: flex;
+           justify-content: space-between;
+           margin-bottom: 10px;
+         }
+         input[type="name"],
+         input[type="text"],
+         input[type="email"],
+         input[type="tel"],
+         textarea {
+           width: 48%;
+           padding: 10px;
+           height: 60px;
+           border-radius: 4px;
+           background-color: rgb(236, 236, 236);
+           outline: none;
+           margin-bottom: 10px;
+         }
+         
+         .fullRow {
+           margin-bottom: 10px;
+         }
+         
+         textarea {
+           width: 100%;
+           height: 150px;
+         }
+         
+         input[type="name"]::placeholder,
+         input[type="text"]::placeholder,
+         input[type="email"]::placeholder,
+         input[type="tel"]::placeholder,
+         textarea::placeholder {
+         
+           font-size: 22px;
+           font-family: bold;
+           color: #383838;
+         }
+         .submitRow {
+           text-align: left;
+         }
+         
+         button[type="submit"] {
+          
+           padding: 10px 20px;
+           background-color: rgb(228, 133, 9);
+           color: #fff;
+           border: none;
+           border-radius: 8px;
+           cursor: pointer;
+           font-size: 20px;
+         }
+         
+         button[type="submit"]:hover {
+           background-color: #d1aa60;
+         }
+       }
+
+}  
+.map 
+{
+    margin: 2rem 7rem;
+    .iframe {
+        width: 100% !important;
+    height: 450px !important;
+    }
+   
+}

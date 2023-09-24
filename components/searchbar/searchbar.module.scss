@@ -1,0 +1,123 @@
+$bgcolor: #005777;
+
+.container {
+  
+    margin: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  .dropdownButton {
+  
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dropdown {
+ 
+    width: 26.5%;
+    font-size: 20px;
+  }
+  .separator {
+    width: 1px;
+    height: 36px; /* Adjust the height as needed */
+    background-color: #ccc;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .searchBar {
+  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+.container2 {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(242, 246, 248);
+    overflow: auto;
+    
+    .imagecontainer {
+      margin: 80px;
+      width: 400px;
+      height: 300px;
+    }
+    
+    .datacontainer {
+      margin-top: 100px;
+      margin-right: 100px;
+      
+      h1 {
+        font-size: 45px;
+        font-weight: 600;
+        color: $bgcolor;
+      }
+      
+      p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .searchContainer {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+      
+     
+      
+      .searchInput {
+     
+        padding: 16px;
+        outline: none;
+        
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+       border:none;
+ 
+      }
+      
+      .searchButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        background-color: #e67104;
+        color: white;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+        outline:none;
+      border:none;
+   
+     
+      }
+      
+      .searchIcon {
+        margin-right: 4px;
+      }
+      
+      ::placeholder {
+        color: #999;
+      }
+    }
+  }
+}

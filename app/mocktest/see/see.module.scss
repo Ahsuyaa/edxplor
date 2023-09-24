@@ -1,0 +1,63 @@
+.container {
+  margin:7rem 12rem;
+  background-color: rgb(241, 241, 241);
+  .title
+  {
+    margin: 20px;
+    .heading
+    {
+      li {
+        display: flex;
+        align-items: center;
+        svg {
+          /* Customize SVG styles */
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .description {
+    h1 {
+     margin-left: 20px;
+    }
+  .customlist {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .customlist li {
+    display: flex; /* Use flexbox to align marker and content in the same line */
+    align-items: center; /* Align vertically in the center */
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .customlist li:before {
+    content: "";
+    display: inline-block; /* Use inline-block to align marker and content in the same line */
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    transform: rotate(45deg);
+
+    margin-right: 10px;
+  }
+
+  }
+  .btn {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    
+    button
+    {
+    border-radius: 4px;
+    background-color: orange;
+    margin: 10px;
+    padding: 5px;
+      
+    }
+  }
+}

@@ -1,0 +1,138 @@
+$bgcolor: #005777;
+.container {
+    margin:7rem 15rem;
+  padding-left: 20px;
+    .title
+    {
+      margin: 20px 0;
+      h1 
+      {
+        color: $bgcolor;
+        font-size:50px ;
+        font-weight: 600;
+      }
+      .p
+      {
+        
+          display: flex;
+          align-items: center;
+          svg {
+            /* Customize SVG styles */
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+          }
+        
+      }
+    }
+    .description {
+        
+        color:grey;
+        font-size: 20px;
+        margin-top: 20px ;
+      h1 {
+        color: #383838;
+      font-weight: 500;
+       margin: 10px 0;
+      }
+      P{
+        margin: 20px 0;
+      }
+     
+    .customlist {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+    
+    .customlist li {
+      /* Align vertically in the center */
+      position: relative;
+      margin-bottom: 10px;
+    }
+    
+    .customlist li:before {
+      content: "";
+    display: inline-block; /* Use inline-block to align marker and content in the same line */
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    transform: rotate(45deg);
+
+    margin-right: 10px;
+    }
+  
+    }
+    .contactcontainer {
+        
+     margin: 60px 0;
+     color: #383838;
+      h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      
+      form {
+      
+        text-align: left;
+      }
+      
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      input[type="name"],
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 48%;
+        padding: 10px;
+        height: 60px;
+        border-radius: 4px;
+        background-color: rgb(236, 236, 236);
+        outline: none;
+        margin-bottom: 10px;
+      }
+      
+      .fullRow {
+        margin-bottom: 10px;
+      }
+      
+      textarea {
+        width: 100%;
+        height: 150px;
+      }
+      
+      input[type="name"]::placeholder,
+      input[type="text"]::placeholder,
+      input[type="email"]::placeholder,
+      input[type="tel"]::placeholder,
+      textarea::placeholder {
+      
+        font-size: 22px;
+        font-family: bold;
+        color: #383838;
+      }
+      .submitRow {
+        text-align: left;
+      }
+      
+      button[type="submit"] {
+       
+        padding: 10px 20px;
+        background-color: rgb(228, 133, 9);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 30px;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #d1aa60;
+      }
+    }
+
+  }
+  

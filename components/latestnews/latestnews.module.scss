@@ -1,0 +1,77 @@
+// latestnews.module.scss
+$bgcolor: #005777;
+.topic{
+    margin: 0 7rem;
+    h1 {
+        font-size:50px;
+        font-weight: 600;
+        color:  $bgcolor ;
+     
+    }
+   .desc{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    p{
+     color:#1581a8; 
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.8px solid #e67104;
+        border-radius: 8px;
+        padding: 10px 20px;
+        color: #e67104;
+        font-size: 16px;
+        cursor: pointer;
+      
+        svg {
+          /* Customize SVG styles */
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+
+   } 
+}
+.customDots {
+    display: flex;
+    justify-content: center;
+  
+      list-style: none;
+   
+    
+    
+  }
+  
+  .customDot {
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 2px;
+    cursor: pointer;
+    
+  }
+  
+  .activeDot {
+    background-color: rgb(0, 225, 255);
+  }
+  
+  .customDotContainer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+ .slider {
+  margin: 5rem 7rem;
+
+  
+ }
+
+  
+  
