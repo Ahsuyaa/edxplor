@@ -65,10 +65,10 @@
 }
 
 .middlecontent {
-  font-size: 2%;
+ margin: 0;
   color: rgb(170, 169, 169);
   text-transform: uppercase;
-
+  
 }
 
 .colmiddle span {
@@ -117,7 +117,7 @@
 }
 
 .childcolmiddle .middlecontent {
-  font-size: 2%;
+
   color: rgb(170, 169, 169);
   text-transform: uppercase;
 }
@@ -162,15 +162,22 @@
       display: none; // Display on small devices
     }
 }
-@include mixins.tablet {
+@include mixins.tablet  {
   
   .gridcontainer {
-  grid-template-columns: repeat(2, 1fr);
+ 
   padding: 5rem !important;
   .heading {
   font-size: 50px ;
   }
   
+  }
+}
+@include mixins.desktop  {
+  
+  .gridcontainer {
+  grid-template-columns: repeat(2, 1fr);
+ 
   }
 }
 

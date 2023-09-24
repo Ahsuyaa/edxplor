@@ -1,15 +1,17 @@
+@use "../variables.module";
+@use '../mixins.module';
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #FFFFFF;
-    margin:0rem 7rem;
+    padding:0rem 5rem;
     @media (max-width: 768px) {
      margin: 0 4rem; // Display on small devices
     }
   }
-  $bgcolor: #005777;
+
   .logo {
  
     width: 120px;
@@ -32,7 +34,13 @@
   }
   .signin
   {
-    color:$bgcolor;
+    color:variables.$primary-color;
     margin-right: 10px;
   }
-  
+  @include mixins.mobile {
+    .navbar {
+     
+      padding:0rem 2rem;
+      margin: 0;
+    }
+  }

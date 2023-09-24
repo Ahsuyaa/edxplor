@@ -1,19 +1,23 @@
-$bgcolor: #005777;
+@use "../variables.module";
+@use '../mixins.module';
+.maindiv{
+  background-color:  variables.$bg-color;
+padding-bottom: 1rem;
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr; // Two columns with equal width
     grid-gap: 10px;
-    margin: 7rem;
+ padding:7rem 5rem 0rem 5rem;
     
     h1 {
         font-size:50px;
         font-weight: 600;
-        color:  $bgcolor ;
+        color:  variables.$primary-color ;
      }
      h4 {
         font-size:15px;
         font-weight:500;
-        color:  $bgcolor ;
+        color:  variables.$primary-color ;
         margin-bottom: 20px;
      }
     .childgrid {
@@ -25,22 +29,26 @@ $bgcolor: #005777;
            display: flex;
          
               .childcolleft {
-                width: 4px;
+                width: 2%;
                 background-color: aqua;
-                height: 10vh;
+                
                 border-radius: 5px 0 0 5px;
               }
             
               .childcolmiddle {
-                width: 245px;
+                width: 90%;
                 background-color: #013a4d;
-                height: 10vh;
+                padding: 8%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
               }
             
               .childcolright {
-                width: 30px;
-                background-color:$bgcolor;
-                height: 10vh;
+                width: 8%;
+                background-color: variables.$primary-color;
+                
                 border-radius: 0 5px 5px 0;
                 display: flex;
              justify-content: center;
@@ -58,63 +66,15 @@ $bgcolor: #005777;
                
          }
       
-      }// Gap between the columns
-  }
-  .topic{
-    margin:  7rem;
-    h1 {
-        font-size:50px;
-        font-weight: 600;
-        color:  $bgcolor ;
-     
-    }
-   .desc{
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 10px;
-    p{
-     color:#1581a8; 
-    }
-    .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 0.8px solid #e67104;
-        border-radius: 8px;
-        padding: 10px 20px;
-        color: #e67104;
-        font-size: 16px;
-        cursor: pointer;
-      
-        svg {
-          /* Customize SVG styles */
-          width: 15px;
-          height: 15px;
-        }
       }
+      .imageContainer{
+        padding: 0 5rem;
+      } 
 
-
-   } 
-   .imageContainer {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 10px; /* Adjust the gap between grid items as needed */
   }
-  
-  .gridItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .gridItem img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  
-  
-  
-  
-  
+}
+@include mixins.mobile {
+  .imageContainer{
+display:none;
+  } 
 }

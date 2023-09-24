@@ -1,8 +1,15 @@
-$bgcolor: #005777;
-
+@use "../variables.module";
+@use '../mixins.module';
+.searchtopic
+{
+   display: flex;
+   justify-content: center;
+   font-size: 25px;
+   color:variables.$primary-color;;
+}
 .container {
   
-    margin: 5rem;
+    margin: 2rem 5rem;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
@@ -20,7 +27,7 @@ $bgcolor: #005777;
   .dropdown {
  
     width: 26.5%;
-    font-size: 20px;
+    font-size: 15px;
   }
   .separator {
     width: 1px;
@@ -36,7 +43,7 @@ $bgcolor: #005777;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 20px;
   }
   
@@ -68,7 +75,7 @@ $bgcolor: #005777;
       h1 {
         font-size: 45px;
         font-weight: 600;
-        color: $bgcolor;
+        color: variables.$primary-color;;
       }
       
       p {
@@ -120,4 +127,39 @@ $bgcolor: #005777;
       }
     }
   }
+}
+
+@include mixins.mobile {
+  .container {
+  
+    margin: 2rem ;
+    .button {
+      padding: 5px 10px;
+    
+      font-size: 7px;
+      margin-left: 10px;
+    }
+    .dropdown {
+      width: 20%;
+      font-size: 7px;
+     
+    }
+      .separator {
+        width: 1px;
+        height: 26px; /* Adjust the height as needed */
+        background-color: #ccc;
+     
+     
+    }
+  
+  }
+  
+  .imagecontainer {
+   
+    display: none; // Display on small devices
+  }
+  .datacontainer{
+    padding: 2rem;
+  }
+  
 }

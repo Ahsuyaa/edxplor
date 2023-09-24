@@ -16,52 +16,52 @@ const SliderComponent = () => {
     {
       id: 1,
       images: "/about.png",
-      title: "Title 1",
-      author: "Author 1",
-      description: "Description 1",
+      title: "information technology",
+      author: "mannkumari",
+      description: "just give me a reason just little bit enough just a second ",
       time: "10 min",
       authorimg:"/about.png"
     },
     {
       id: 2,
       images: "/about.jpg",
-      title: "Title 2",
-      author: "Author 2",
-      description: "Description 2",
+      title: "information technology",
+      author: "mannkumari",
+      description: "just give me a reason just little bit enough just a second ",
       time: "15 min",
     },
     {
         id: 1,
         images: "/college.png",
-        title: "Title 1",
-        author: "Author 1",
-        description: "Description 1",
+        title: "information technology",
+        author: "mannkumari",
+        description: "just give me a reason just little bit enough just a second ",
         time: "10 min",
         authorimg:"/about.png"
       },
       {
         id: 2,
         images: "/uniform.png",
-        title: "Title 2",
-        author: "Author 2",
-        description: "Description 2",
+        title: "information technology",
+        author: "mannkumari",
+        description: "just give me a reason just little bit enough just a second ",
         time: "15 min",
       },
       {
         id: 1,
         images: "/college.png",
-        title: "Title 1",
-        author: "Author 1",
-        description: "Description 1",
+        title: "information technology",
+        author: "mannkumari",
+        description: "just give me a reason just little bit enough just a second ",
         time: "10 min",
         authorimg:"/about.png"
       },
       {
         id: 2,
         images: "/college.png",
-        title: "Title 2",
-        author: "Author 2",
-        description: "Description 2",
+        title: "information technology",
+        author: "mannkumari",
+        description: "just give me a reason just little bit enough just a second ",
         time: "15 min",
         authorimg:"/about.png"
       },
@@ -84,7 +84,23 @@ const SliderComponent = () => {
       afterChange: (current) => {
         setCurrentSlide(current);
       },
+      responsive: [
+        {
+          breakpoint: 768, 
+          settings: {
+            slidesToShow: 1, 
+          },
+        },
+        {
+          breakpoint: 1024, 
+          settings: {
+            slidesToShow: 3, 
+          },
+        },
+        
+      ],
     };
+    
 
   return (
     <>

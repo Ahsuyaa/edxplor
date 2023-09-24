@@ -1,11 +1,14 @@
-// latestnews.module.scss
-$bgcolor: #005777;
+@use "../variables.module";
+@use '../mixins.module';
+
 .topic{
-    margin: 0 7rem;
+  padding-top:5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
     h1 {
         font-size:50px;
         font-weight: 600;
-        color:  $bgcolor ;
+        color:  variables.$primary-color;
      
     }
    .desc{
@@ -13,7 +16,7 @@ $bgcolor: #005777;
     justify-content: space-between;
     margin: 0px 10px;
     p{
-     color:#1581a8; 
+     color:variables.$primary-color; 
     }
     .btn {
         display: flex;
@@ -57,7 +60,7 @@ $bgcolor: #005777;
   }
   
   .activeDot {
-    background-color: rgb(0, 225, 255);
+    background-color: variables.$primary-color;
   }
   
   .customDotContainer {
@@ -68,10 +71,17 @@ $bgcolor: #005777;
   }
   
  .slider {
-  margin: 5rem 7rem;
-
-  
+  padding: 2rem 5rem ;
  }
-
+ @include mixins.mobile {
+  .topic{
+    margin: 0 2rem;
+    .desc{
+      display: block;
+    }}
+  .slider {
+    padding: 2rem ;
+   }
+}
   
   

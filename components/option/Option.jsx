@@ -39,7 +39,7 @@ const Option = () => {
 <div>
 <div className={styles.card6}>
     <div className={styles.card7}><FaGraduationCap/></div>
-    <div className={styles.card8}><h4>University</h4></div>
+    <div className={styles.card8}>University</div>
 
 </div>
 <div className={styles.card9}>Learn Morea</div>
@@ -73,7 +73,7 @@ const Option = () => {
 <hr></hr>
 <div className={styles.card6}>
     <div className={styles.card7}><FaGraduationCap/></div>
-    <div className={styles.card8}><h4>University</h4></div>
+    <div className={styles.card8}>University</div>
     <div className={styles.card9}>Learn More</div>
 </div>
   </div>

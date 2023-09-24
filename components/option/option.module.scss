@@ -4,11 +4,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-   padding: 2rem;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
+   padding: 5rem;
    
-    }
   
     .left {
       h1 {
@@ -24,7 +21,7 @@
     .card {
       background-color: rgba(255, 255, 255, 1);
 
-      width: 200px;
+      width: 250px;
       border: 2px solid #e0e0e0;
       margin: 50px;
       position: relative;
@@ -164,7 +161,7 @@
     .secondcard {
       background-color: rgba(255, 255, 255, 1);
   
-      width: 350px;
+      width: 400px;
       border: 2px solid #e0e0e0;
       margin:20px 100px;
       display: grid;
@@ -304,7 +301,26 @@
       z-index: 1;
 
     }
-  
-    // Apply responsive styles using mixins
+
   
   }
+  @include mixins.mobile {
+    .gridcontainer {
+      padding: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+  @include mixins.tablet  {
+    .gridcontainer {
+      
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @include mixins.desktop  {
+    .gridcontainer {
+      
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+ 

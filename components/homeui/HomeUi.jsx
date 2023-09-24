@@ -8,6 +8,8 @@ import LatestNews from "../latestnews/LatestNews";
 import { AiOutlineRight } from "react-icons/ai";
 
 import PlansCollege from "../plans&college/PlansCollege";
+
+import College from "../colleges/College"
 import girl from "../../public/gl.jpg"
 import Image from "next/image";
 const HomeUi = () => {
@@ -26,7 +28,7 @@ const HomeUi = () => {
             <div className={`${homeui.row} `}>
               <div className={homeui.colleft}></div>
               <div className={homeui.colmiddle}>
-                <h1 className={homeui.middlecontent}>I`m ready to </h1>{" "}
+                <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
                 <span>Find course</span>
               </div>
               <div className={homeui.colright}>
@@ -37,7 +39,7 @@ const HomeUi = () => {
               <div className={homeui.childrow}>
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
-                  <h1 className={homeui.middlecontent}>I`m ready to </h1>{" "}
+                  <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
                   <span>Find course</span>
                 </div>
                 <div className={homeui.childcolright}>
@@ -47,7 +49,7 @@ const HomeUi = () => {
               <div className={homeui.childrow}>
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
-                  <h1 className={homeui.middlecontent}>I`m ready to </h1>{" "}
+                  <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
                   <span>Find course</span>
                 </div>
                 <div className={homeui.childcolright}>
@@ -71,9 +73,10 @@ const HomeUi = () => {
       </div>
       <Feature />
       <Option />
-      {/* <SearchBar />
+      <SearchBar />
       <LatestNews />
-      <PlansCollege /> */}
+      <PlansCollege />
+      <College/>
     </>
   );
 };

@@ -4,7 +4,7 @@ import styles from "./searchbar.module.scss";
 import Select from "react-select";
 import Image from 'next/image';
 import { FaSearch, FaSearchLocation } from "react-icons/fa";
-import img from "../../public/uniform.png"
+import img from "../../public/gl.jpg"
 const SearchBar = () => {
     const options = [
         { value: "option1", label: "Option 1" },
@@ -18,11 +18,17 @@ const SearchBar = () => {
           boxShadow: 'none',
         }),
         indicatorSeparator: () => null,
+        dropdownIndicator: (provided) => ({
+          ...provided,
+          padding: 0,
+        }),
       };
   return <>
-
-
+  <div className={styles.searchtopic}>
+  <h4>Start your search below</h4>
+  </div>
  <div className={styles.container}>
+
         <div className={styles.dropdownButton}>
           <div className={styles.dropdown}>
             <Select styles={customStyles} options={options} placeholder="Select Option 1" />
@@ -40,7 +46,7 @@ const SearchBar = () => {
       </div>
       <div className={styles.container2}>
       <div className={styles.imagecontainer}>
-      <Image src={img} alt="Your Image" width={400} height={300} />
+      <Image src={img} alt="Your Image" />
       </div>
       <div  className={styles.datacontainer}><h1> Find From Where You Live</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos maxime nostrum ducimus repudiandae omnis maiores </p>

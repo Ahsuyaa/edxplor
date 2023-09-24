@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./styles.module.scss"
 import { FaAngleRight, FaArrowRight } from 'react-icons/fa'
+import grp from "../../public/grp.jpeg"
+import Image from 'next/image'
 const PlansCollege = () => {
     const data = [
         { id: 1, text: 'Column 1' },
@@ -23,7 +25,7 @@ const PlansCollege = () => {
   return (
     
     
-    <>
+    <div className={styles.maindiv}>
     <div className={styles.gridcontainer}>
       <div className={styles.leftdiv}>
         <h1>Amplify Your College Experience</h1>
@@ -42,24 +44,18 @@ const PlansCollege = () => {
           </div>
         </div>
       </div>
-      <div>Grid Item 2</div>
-    </div>
-    <div className={styles.topic}>
-    <h1>These College Trust Us</h1>
-    <div className={styles.desc}>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, consectetur?</p>
-     <button className={styles.btn}>View more <FaArrowRight/></button>
-    </div>
-    <div className={styles.imageContainer}>
-      {images.map((image, index) => (
-        <div key={index} className={styles.gridItem}>
-          <img src={image} alt={`Image ${index + 1}`} />
-        </div>
-      ))}
-    </div>
-    </div>
+      <div className={styles.imageContainer}>
+
+      <Image
+        src={grp}
+        alt="My Image"
     
-  </>
+      />
+    </div>
+    </div>
+ 
+    
+  </div>
   )
 }
 

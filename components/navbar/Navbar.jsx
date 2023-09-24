@@ -41,7 +41,8 @@ const Navbar = () => {
             
             <FaListUl  className={styles.toggleicon}  size={20} />
           </Link>
-          {showToggle && (
+         <div className={styles.hideonlarge}>
+         {showToggle && (
       <ul>
         <li>
           <a href="#">Home</a>
@@ -110,6 +111,7 @@ const Navbar = () => {
         </li>
       </ul>
           )}
+         </div>
             <ul className={styles.largescreenshow}>
         <li>
           <a href="#">Home</a>
