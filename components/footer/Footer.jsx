@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./footer.module.scss"
+import { FaEnvelope, FaFacebook, FaInstagram, FaLocationArrow, FaPhone, FaSearch, FaTwitter } from 'react-icons/fa'
 const Footer = () => {
   return (
     <div className={styles.gridcontainer}>
     <div className={styles.col}>
-      <h1>Useful links</h1>
+      <h5>Useful links</h5>
       <ul>
         <li>
           Department of co operative
@@ -28,7 +29,7 @@ const Footer = () => {
       </ul>
     </div>
     <div className={styles.col}>
-      <h1>Our Service</h1>
+      <h5>Our Service</h5>
       <ul>
         <li>ATM</li>
         <li>Remittance</li>
@@ -37,8 +38,37 @@ const Footer = () => {
         <li>Extra Banking</li>
       </ul>
     </div>
-    <div className={styles.col}>Column 3</div>
-    <div className={styles.col}>Column 4</div>
+    <div className={`${styles.col} ${styles.detailsicon}`}>
+    <h5>Contact Details</h5>
+      <ul>
+        <li><FaLocationArrow/> charikot, dolakha</li>
+        <li><FaPhone/>98001828700,9826718720</li>
+        <li><FaEnvelope/>abc@gmail.com</li>
+      
+      </ul>
+    </div>
+    <div className={styles.col}>
+      <h5>Subscribe</h5>
+      <p>subscribe to stay tuned for latest updates</p>
+      <div className={styles.searchContainer}>
+        
+        <input
+          type="text"
+          className={styles.searchInput}
+          placeholder="Email"
+        />
+        <button className={styles.searchButton}>
+          <FaSearch className={styles.searchIcon} />
+          Search
+        </button>
+      </div>
+      <h5>Social Media</h5>
+      <div className={styles.socioicon}>
+        <FaFacebook/>
+        <FaInstagram/>
+        <FaTwitter/>
+      </div>
+    </div>
   </div>
   )
 }

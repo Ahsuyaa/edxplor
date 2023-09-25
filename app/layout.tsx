@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className={styles.customcontainer}>
         {children}
         </main>
-  
+     <Footer/>
         </body>
     </html>
   )

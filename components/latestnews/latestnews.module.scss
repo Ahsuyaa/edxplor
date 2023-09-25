@@ -2,9 +2,7 @@
 @use '../mixins.module';
 
 .topic{
-  padding-top:5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+
     h1 {
         font-size:50px;
         font-weight: 600;
@@ -71,16 +69,22 @@
   }
   
  .slider {
-  padding: 2rem 5rem ;
+  padding: 2rem;
  }
  @include mixins.mobile {
   .topic{
-    margin: 0 2rem;
+    padding: 2rem;
     .desc{
       display: block;
     }}
+ 
+}
+@include mixins.tablet {
+  .topic{
+    margin: 0 5rem;
+   }
   .slider {
-    padding: 2rem ;
+    padding: 2rem 5rem ;
    }
 }
   

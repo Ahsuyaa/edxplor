@@ -3,24 +3,93 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
     gap: 10px; 
-    padding: 2rem 7rem;/* Adjust the gap value to create spacing between columns */
-  }
+    padding: 5rem;/* Adjust the gap value to create spacing between columns */
+
   
   .col {
     padding: 10px; /* Adjust the padding value to create spacing within each column */
     box-sizing: border-box;
     color:#e7e5e5;
-    h1 
+    h5 
     {
         margin-bottom: 10px;
         font-weight: bold;
         font-size: 20px;
-    }
+    }ul{
+      padding: 0;
+
     li
     {
+      font-size: 20px;
         margin-bottom: 5px;
-        margin-top: 5px;
+        margin: 5px 0;
+        list-style-type: none;
     }
     
   }
+  p{
+    font-size: 20px;
+  }
+    
+  }
+  .detailsicon
+  {
+    ul{
+     li{
+      display: flex;
+      gap:10px
+     }
+    }
+  }
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
   
+ 
+  
+  .searchInput {
+ 
+    padding: 16px;
+    outline: none;
+    
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+   border:none;
+
+  }
+  
+  .searchButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #e67104;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    outline:none;
+  border:none;
+
+ 
+  }
+  
+  .searchIcon {
+    margin-right: 4px;
+  }
+  
+  ::placeholder {
+    color: #999;
+  }
+}
+.socioicon
+{
+  display: flex;
+  gap: 10px;
+  svg
+  {
+    font-size: 25px;
+  }
+}
+}

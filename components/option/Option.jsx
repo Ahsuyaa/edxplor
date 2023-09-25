@@ -9,7 +9,7 @@ const Option = () => {
  <h1>Compare Your School Option</h1>
  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolor sapiente nihil molestiae dolore exercitationem quos eos veniam ipsa omnis.</p>
     </div>
-    <div className={styles.right}>
+    <div className={`${styles.right} ${styles.hideonsmall}  `}>
     <div className={`${styles.secondcard} ${styles.override}`}>
   
             <div>
