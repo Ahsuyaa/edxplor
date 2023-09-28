@@ -13,7 +13,7 @@ const Banner = ({ backgroundImageSrc, title, breadcrumbs }) => {
         <p>
           {breadcrumbs.map((breadcrumb, index) => (
             <span key={index}>
-              <Link href={breadcrumb.link}>{breadcrumb.text}</Link>
+              <Link href={breadcrumb.link} className={styles.linkcolor}>{breadcrumb.text}</Link>
               {index !== breadcrumbs.length - 1 && (
                 <AiOutlineRight className={styles.arrow} />
               )}

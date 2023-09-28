@@ -24,7 +24,7 @@ const page = () => {
     </div>
     <div className={styles.container2}>
       <div  className={`${styles.column} ${styles.column1}`}>
-       <h1>INDRODUCTION</h1>
+       <h4>INDRODUCTION</h4>
       </div>
       <div  className={`${styles.column} ${styles.column2}`}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam similique ipsum? Minus ea autem culpa, ipsa dolorum in magnam.
@@ -40,7 +40,7 @@ const page = () => {
     <div className={styles.main}>
       <div  className={styles.Headline}>
     <h1>Our Core Value</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur repellat ametl Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, animi! </p>
+        <p>Lorem ipsum dolor, Aspernatur repellat ametl Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, animi! </p>
         </div>
     <div className={styles.container3}>
    
@@ -60,7 +60,7 @@ const page = () => {
             <FaUniversity/>
           </div>
         </div>
-        <h6>Leatrn Everything</h6>
+        <h6>Flexible learning</h6>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum id error, ex esse obcaecati porro? Doloribus doloremque ipsum non. </p>
       </div>
       <div className={styles.values}>
@@ -69,7 +69,7 @@ const page = () => {
             <FaUniversity/>
           </div>
         </div>
-        <h6>Leatrn Everything</h6>
+        <h6>Learn with experts</h6>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum id error, ex esse obcaecati porro? Doloribus doloremque ipsum non. </p>
       </div>
     </div>

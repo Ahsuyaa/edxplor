@@ -53,12 +53,19 @@
   }
    
 }
-@include mixins.tablet {
+@include mixins.mobile {
 
- 
+  .topic{
     .desc{
       display: block;
     }
+  
+  .imageContainer {
+  
+    grid-template-columns: repeat(3, 1fr); 
+
+  }
+}
   
 }
 @include mixins.tablet {
