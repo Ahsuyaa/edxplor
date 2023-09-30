@@ -28,7 +28,7 @@ const HomeUi = () => {
             <div className={`${homeui.row} `}>
               <div className={homeui.colleft}></div>
               <div className={homeui.colmiddle}>
-                <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
+                <h5 className={homeui.middlecontent}>Im ready to </h5>{" "}
                 &apos;Find course
               </div>
               <div className={homeui.colright}>
@@ -39,7 +39,7 @@ const HomeUi = () => {
               <div className={homeui.childrow}>
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
-                  <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
+                  <h5 className={homeui.middlecontent}>Im ready to </h5>{" "}
                   &apos;Find course
                 </div>
                 <div className={homeui.childcolright}>
@@ -49,7 +49,7 @@ const HomeUi = () => {
               <div className={homeui.childrow}>
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
-                  <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
+                  <h5 className={homeui.middlecontent}>Im ready to </h5>{" "}
                   &apos;Find course
                 </div>
                 <div className={homeui.childcolright}>

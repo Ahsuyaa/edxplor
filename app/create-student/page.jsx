@@ -103,8 +103,8 @@ const Page = () => {
           
               <select value={edj} onChange={(e) => setEdj(e.target.value)}>
                 <option value="">EDJ</option>
-                <option value="bachelor">Bachelor's</option>
-                <option value="master">Master's</option>
+                <option value="bachelor">Bachelors</option>
+                <option value="master">Masters</option>
                 <option value="phd">PhD</option>
                 <option value="diploma">Diploma</option>
               </select>
