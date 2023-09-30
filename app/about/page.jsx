@@ -34,7 +34,7 @@ const page = () => {
     <div className={styles.Img}>
     <Image
         src={AboutImg}
-        alt="Background Image"
+        alt="Background"
       />
     </div>
     <div className={styles.main}>

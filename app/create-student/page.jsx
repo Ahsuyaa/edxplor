@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <>
      <div className={styles.maindiv}>
-     <h2 className={styles.mainheadline}> Students <span> Create</span></h2>
+     <h2 className={styles.mainheadline}> Students  &apos; Create</h2>
    
       <div className={styles.container}>
         

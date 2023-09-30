@@ -29,7 +29,7 @@ const HomeUi = () => {
               <div className={homeui.colleft}></div>
               <div className={homeui.colmiddle}>
                 <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
-                <span>Find course</span>
+                &apos;Find course
               </div>
               <div className={homeui.colright}>
                 <AiOutlineRight />
@@ -40,7 +40,7 @@ const HomeUi = () => {
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
                   <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
-                  <span>Find course</span>
+                  &apos;Find course
                 </div>
                 <div className={homeui.childcolright}>
                   <AiOutlineRight />
@@ -50,7 +50,7 @@ const HomeUi = () => {
                 <div className={homeui.childcolleft}></div>
                 <div className={homeui.childcolmiddle}>
                   <h5 className={homeui.middlecontent}>I`m ready to </h5>{" "}
-                  <span>Find course</span>
+                  &apos;Find course
                 </div>
                 <div className={homeui.childcolright}>
                   <AiOutlineRight />

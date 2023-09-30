@@ -29,7 +29,8 @@ const PlansCollege = () => {
     <div className={styles.gridcontainer}>
       <div className={styles.leftdiv}>
         <h1>Amplify Your College Experience</h1>
-        <h4>Take your education anywhere you want. you lead, and we'll help</h4>
+        <h4>Take your education anywhere you want. You lead, and we&apos;ll help</h4>
+
         <div className={styles.gridrow}>
        
           <div className={styles.childgrid}>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./styles.module.scss"
 import { FaAngleRight, FaArrowRight } from 'react-icons/fa'
+import Image from 'next/image';
 const College = () => {
     const data = [
         { id: 1, text: 'Column 1' },
@@ -31,7 +32,7 @@ const College = () => {
     <div className={styles.imageContainer}>
       {images.map((image, index) => (
         <div key={index} className={styles.gridItem}>
-          <img src={image} alt={`Image ${index + 1}`} />
+          <Image src={image} alt={`Image ${index + 1}`} />
         </div>
       ))}
     </div>
