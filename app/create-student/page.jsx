@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <>
      <div className={styles.maindiv}>
-     <h1 className={styles.mainheadline}> Students <span> Create</span></h1>
+     <h2 className={styles.mainheadline}> Students <span> Create</span></h2>
    
       <div className={styles.container}>
         
@@ -27,32 +27,32 @@ const Page = () => {
           </div>
           <div className={styles.row}>
             <div>
-              <h1>First Name</h1>
+              <h2>First Name</h2>
             </div>
             <div>
-              <h1>Middle Name</h1>
+              <h2>Middle Name</h2>
             </div>
             <div>
-              <h1>Last Name</h1>
-            </div>
-          </div>
-          <div className={styles.row}>
-            <div>
-              <h1>Personal Email</h1>
-            </div>
-            <div>
-              <h1>College Email</h1>
-            </div>
-            <div>
-              <h1>Dob</h1>
+              <h2>Last Name</h2>
             </div>
           </div>
           <div className={styles.row}>
             <div>
-              <h1>Phone No</h1>
+              <h2>Personal Email</h2>
             </div>
             <div>
-              <h1></h1>
+              <h2>College Email</h2>
+            </div>
+            <div>
+              <h2>Dob</h2>
+            </div>
+          </div>
+          <div className={styles.row}>
+            <div>
+              <h2>Phone No</h2>
+            </div>
+            <div>
+              
               <select value={gender} onChange={(e) => setGender(e.target.value)}>
                 <option value="">Gender</option>
                 <option value="male">Male</option>
@@ -61,7 +61,7 @@ const Page = () => {
               </select>
             </div>
             <div>
-              <h1></h1>
+            
               <select value={bloodGroup} onChange={(e) => setBloodGroup(e.target.value)}>
                 <option value="">Blood Group</option>
                 <option value="A+">A+</option>
@@ -75,9 +75,9 @@ const Page = () => {
               </select>
             </div>
           </div>
-          <div className={styles.row2}>
+          <div className={styles.row}>
             <div>
-              <h1></h1>
+          
               <select value={religion} onChange={(e) => setReligion(e.target.value)}>
                 <option value="">Religion</option>
                 <option value="hindu">Hindu</option>
@@ -89,7 +89,7 @@ const Page = () => {
               </select>
             </div>
             <div>
-              <h1></h1>
+          
               <select value={ethnicity} onChange={(e) => setEthnicity(e.target.value)}>
                 <option value=" ">Ethnicity</option>
                 <option value="asian">Asian</option>
@@ -100,7 +100,7 @@ const Page = () => {
               </select>
             </div>
             <div>
-              <h1></h1>
+          
               <select value={edj} onChange={(e) => setEdj(e.target.value)}>
                 <option value="">EDJ</option>
                 <option value="bachelor">Bachelor's</option>
@@ -110,7 +110,7 @@ const Page = () => {
               </select>
             </div>
             <div>
-              <h1></h1>
+          
               <select value={nationality} onChange={(e) => setNationality(e.target.value)}>
                 <option value="">Nationality</option>
                 <option value="us">US</option>

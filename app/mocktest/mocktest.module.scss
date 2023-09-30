@@ -66,9 +66,9 @@ $bgcolor: #005777;
        padding: 20px 0px;
       
           .colleft {
-            width: 4px;
+            width: 2%;
             background-color:#ff6600 ;
-            height: 8vh;
+       
             border-radius: 5px 0 0 5px;
           }
         
@@ -76,18 +76,18 @@ $bgcolor: #005777;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 550px;
+            width: 90%;
             background-color: #013a4d;
-            height: 8vh;
+    
             h1 {
               color: #fff;
             }
           }
         
           .colright {
-            width: 30px;
+            width: 8%;
             background-color: $bgcolor;
-            height: 8vh;
+    
             border-radius: 0 5px 5px 0;
             display: flex;
             justify-content: center;

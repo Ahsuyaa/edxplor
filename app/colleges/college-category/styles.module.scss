@@ -1,3 +1,6 @@
+@use "../../../components/mixins.module";
+@use "../../../components/variables.module";
+
 .container {
     position: relative;
     width: 100%;
@@ -36,13 +39,12 @@
   }
   .row {
     display: grid;
-    grid-template-columns: 25% 75%; // Set the widths of the columns
+    grid-template-columns: 25% 70%; 
     grid-gap: 4rem; 
-    margin: 5rem;
+    padding: 5rem ;
     
 .column1 {
-   // Add position relative to the first column
-  }
+
   
 .separator {
     border-top: 1px solid #ccc;
@@ -194,16 +196,13 @@
     background-color: grey;
     margin-right: 1rem;
   }
-  // Add some gap between the columns
+ 
   }
-  
-  // Media query for smaller screens
-  @media (max-width: 768px) {
-    .row {
-      grid-template-columns: 100%; // Change to a single column layout
-    }
-  }
+}
+
 .column2{
+
+  
   color: gray;
   .heading {
     display: flex;
@@ -235,13 +234,6 @@
         margin-top: 20px;
       }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 20px; 
-    
-   /* Adjust the gap between cards */
-  }
   
   .card {
     background-color: #fff;
@@ -281,4 +273,21 @@
   }
   
 }
+
+    @include mixins.mobile {
+      .row {
+        padding: 2rem;
+        grid-template-columns: 100%; // Change to a single column layout
+      }
+    }
+    @include mixins.desktop {
+      
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
   
+ /* Adjust the gap between cards */
+}
+     
+    }

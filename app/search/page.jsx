@@ -20,10 +20,14 @@ const page = () => {
   const customStyles = {
     control: (provided) => ({
       ...provided,
-      border: "none",
-      boxShadow: "none",
+      border: 'none',
+      boxShadow: 'none',
     }),
     indicatorSeparator: () => null,
+    dropdownIndicator: (provided) => ({
+      ...provided,
+      padding: 0,
+    }),
   };
   return (
     <>

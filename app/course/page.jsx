@@ -203,11 +203,11 @@ const Page = () => {
           <div className={styles["card-grid"]}>
             {currentItems.map((item) => (
               <div className={styles.card} key={item.id}>
-                <div className={styles["card-title"]}>
-               
-                  <h1>{item.name}</h1>
+                <div className={styles["cardtitle"]}>
+             
+                  <h3>{item.name}</h3>
                 </div>
-                <h2 className={styles["card-location"]}><IoLocationOutline/>{item.location}</h2>
+                <h4 className={styles["card-location"]}><IoLocationOutline/>{item.location}</h4>
                 <p className={styles["card-number"]}><RiPhoneLine outline={true}/>{item.number}</p>
               </div>
             ))}

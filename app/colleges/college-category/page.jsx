@@ -10,6 +10,10 @@ import styles from "./styles.module.scss";
 import AboutImg from "../../../public/about.jpg";
 import pic from "../../../public/college.png";
 import Pagination from "../../../components/pagination/Pagination";
+
+import Banner from "../../../components/banner/Banner"
+
+
 const Page = () => {
   const [showDropdown1, setShowDropdown1] = useState(false);
   const [showDropdown2, setShowDropdown2] = useState(false);
@@ -69,19 +73,25 @@ const Page = () => {
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+  
+    const breadcrumbs = [
+        { text: 'Home', link: '/' },
+        { text: 'About', link: '/about' },
+       
+      ];
+    
+
+
+
   return (
     <>
-      <div className={styles.container}>
-        <Image src={AboutImg} alt="Background Image" />
-        <div className={styles["text-overlay"]}>
-          <h1>Colleges</h1>
-          <p>
-            <Link href="/">Home</Link>
-            <AiOutlineRight className={styles.arrow} />
-            Colleges
-          </p>
-        </div>
-      </div>
+      <div className={styles.app}>
+      <Banner
+        backgroundImageSrc={AboutImg}
+        title="About"
+        breadcrumbs={breadcrumbs}
+      />
+    </div>
       <div className={styles.row}>
         <div className={styles.column1}>
           <div className={styles.searchInput}>

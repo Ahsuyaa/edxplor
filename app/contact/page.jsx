@@ -28,7 +28,7 @@ const page = () => {
             </div>
           </div>
           <div className={styles.content}>
-            <h1>9845600000</h1>
+            <h3>9845600000</h3>
             <span>Call anytime</span>
           </div>
         </div>
@@ -39,7 +39,7 @@ const page = () => {
             </div>
           </div>
           <div className={styles.content}>
-            <h1>9845600000</h1>
+            <h3>9845600000</h3>
             <span>Call anytime</span>
           </div>
         </div>
@@ -50,14 +50,14 @@ const page = () => {
             </div>
           </div>
           <div className={styles.content}>
-            <h1>9845600000</h1>
+            <h3>9845600000</h3>
             <span>Call anytime</span>
           </div>
         </div>
       </div>
       <div className={styles.row2}>
         <div className={styles.left}>
-          <h1>We are Always Ready to Hear From You</h1>
+          <h2>We are Always Ready to Hear From You</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptas
             libero alias est, totam consequuntur suscipit delectus ratione rem
