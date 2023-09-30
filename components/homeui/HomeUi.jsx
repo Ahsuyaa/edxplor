@@ -22,7 +22,7 @@ const HomeUi = () => {
             Find the Best College For Your Future
           </h1>
           <h4 className={homeui.headingcontent}>
-            Take your education anywhere you want. you lead, and we'll help
+            Take your education anywhere you want. you lead, and we will help
           </h4>
           <div className={homeui.gridrow}>
             <div className={`${homeui.row} `}>
